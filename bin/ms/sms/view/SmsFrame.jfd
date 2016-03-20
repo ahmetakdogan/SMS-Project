@@ -1,0 +1,115 @@
+JFDML JFormDesigner: "5.2.0.0.109" Java: "1.6.0_38-ea" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp tabbedPane1:::::x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp tabbedPane1:::::x}}"
+		} ) {
+			name: "this"
+			"$sizePolicy": 0
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				"background": sfield java.awt.Color white
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:28:p, par l {comp label11::l:p::p, seq l {comp label1:::p:83:p, space :::p, comp lbKalanKontör:::p:48:p}}, space :p:51:p, par l:::p {seq {comp label2:::p:226:p, space :::p, comp lbSecilicepsayi:::p:37:p}, comp scrollPane1::l:p:392:p, comp label3::l:p:185:p, comp cboxOriginatör::l:p:307:p, comp label4::l:p:63:p, seq l {comp label5:::p:94:p, space s:::p, comp lbKaraktersayisi:::p:56:p, space :p:53:p, comp label6:::p:86:p, space s:::p, comp lbMesaajsayisi:::p:69:p}, comp scrollPane2::l::0:x}, space :0:32:x}, seq t {space ::325:x, comp btGonder:::p:160:p, space :p:224:p}}"
+					"$verticalGroup": "par l {seq {space :p:41:p, par b {comp label2::b:p::p, comp lbSecilicepsayi::b:p::p, comp label1::b:p::p, comp lbKalanKontör::b:p::p}, space s:::p, comp scrollPane1:::p:41:p, space u:::p, comp label3:::p::p, space :p:2:p, par l {comp label11::l:p:204:p, seq l {comp cboxOriginatör:::p::p, space s:::p, comp label4:::p::p, space u:::p, comp scrollPane2:::p:118:p, space s:::p, par b {comp label5::b:p::p, comp lbKaraktersayisi::b:p::p, comp label6::b:p::p, comp lbMesaajsayisi::b:p::p}}}, space u:::p, comp btGonder:::p:53:p, space :::p}}"
+				} ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Kalan Kontör :"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "txtNumarayaz"
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Seçilen Geçerli Cep Telefonu Sayısı :"
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cboxOriginatör"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "Mesaj Başlığı:"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "Mesaj:"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "txtMesajYaz"
+							"wrapStyleWord": true
+							"lineWrap": true
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "Karakter Sayisi :"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "Mesaj Sayisi :"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btGonder"
+						"text": "Gönder"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\Workspace\\MutluSmsProject\\src\\ms\\sms\\image\\email-send-icon.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btGönderActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lbKalanKontör"
+						"foreground": sfield java.awt.Color red
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lbSecilicepsayi"
+						"foreground": sfield java.awt.Color red
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lbKaraktersayisi"
+						"foreground": sfield java.awt.Color red
+						"text": "0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lbMesaajsayisi"
+						"foreground": sfield java.awt.Color red
+						"text": "0"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\HAKAN AYDIN\\Desktop\\indsfsfir.jpg" )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Sms"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\Workspace\\MutluSmsProject\\src\\ms\\sms\\image\\messages-icon.png" )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:60:p, comp scrollPane3:::p:617:p, space ::32:x}}"
+					"$verticalGroup": "par l {seq l {space :p:36:p, comp scrollPane3:::p:244:p, space ::149:x}}"
+				} ) {
+					name: "panel2"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane3"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "tbRapor"
+							"autoResizeMode": 0
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Rapor"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "D:\\Workspace\\MutluSmsProject\\src\\ms\\sms\\image\\reportsicon35x35.png" )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 750, 520 )
+		} )
+	}
+}
